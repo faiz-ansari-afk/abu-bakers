@@ -1,139 +1,196 @@
-:root{
-    --color-primary: #2584ff;
-    --color-secondary: #00d9ff;
-    --color-accent: #ff3400;
-    --color-headings: #1b0760;
-    --color-body: #918ca4;
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+}
+*, *::after, *::before{
+  box-sizing: border-box; /* it is set to border box because button created by anchor tag is going outside of the box */
 }
 /* -----------------------------------------------------TYPOGRAPHY -----------------------------------------------------*/
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 2.4rems;
-    line-height: 1.5;
-    color: var(--color-body);
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rems;
+  line-height: 1.5;
+  color: var(--color-body);
 }
-h1, h2, h3{
-    color: var(--color-headings);
-    margin-bottom: 1rem;
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
 }
-h1{
-    font-size: 7rem;
+h1 {
+  font-size: 7rem;
 }
-h2{
-    font-size:4rem;
+h2 {
+  font-size: 4rem;
 }
-h3{
-    font-size:3rem;
+h3 {
+  font-size: 3rem;
 }
-p{
-    margin-top: 0;
+p {
+  margin-top: 0;
 }
-@media  screen and (min-width: 1024px) {
-    body {
-        font-size:1.8rem;
-    }
-    h1{
-        font-size:8rem;
-    }
-    h2{
-        font-size:4rem;
-    }
-    h3{
-        font-size:2.4rem;
-    }
-    
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 /*-------------------------------------------------------LINKS------------------------------------------------ */
-a{
-    text-decoration:none;
+a {
+  text-decoration: none;
 }
 .link-arrow {
-    color: var(--color-accent);
-    text-transform: uppercase;
-    font: 2rem;
-    font-weight: bold;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font: 2rem;
+  font-weight: bold;
 }
-.link-arrow::after{
-    content:"-->";
-    margin-left: 5px;
-    transition: margin 0.15s;
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
 }
-.link-arrow:hover::after{
-    margin-left: 10px;
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
-@media  screen and (min-width: 1024px){
-    .link-arrow{
-        font-size: 1.5rem;
-    }
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }
 /* ---------------------------------------------------------BADGES------------------------------------------------------------- */
 /* BEM convention */
-.badge{
-    border-radius: 20px;
-    padding: 0.5rem 2rem;
-    font-weight: 600;
-    font-size: 2rem;
-    white-space: nowrap;/* for small space I dont want this badge to come to next line, stay in same line = nowwrap */
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  white-space: nowrap; /* for small space I dont want this badge to come to next line, stay in same line = nowwrap */
 }
-.badge--primary{
-    background: var(--color-primary);
-    color:#fff;
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
 }
-.badge--secondary{
-    background: var(--color-secondary);
-    color:#fff;
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
 }
-.badge--small{
-    font-size:1.6rem;
+.badge--small {
+  font-size: 1.6rem;
 }
-@media screen and (min-width: 1024px){
-    .badge{
-        font-size:1.5rem;
-    }
-    .badge--small{
-        font-size:1.2rem
-    }
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
 }
 /* --------------------------------------------------LIST----------------------------------------------------- */
-.list{
-    list-style:none;
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
     padding-left: 0;
-    color:var(--color-headings);
-}
-.list--inline .list__item{
-    display: inline-block;
-    margin-right: 2rem;
-}
-.list--tick{
-    list-style-image: url(../images/tick.svg);
-    padding-left: 3rem;
-}
-.list--tick .list__item{
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
-}
-@media screen and (min-width: 1024px){
-    .list--tick .list__item{
-        padding-left: 0;
-    }
+  }
 }
 /* -----------------------------------------------------ICONS-------------------------------------- */
-.icon{
-    width:40px;
-    height:40px;
+.icon {
+  width: 40px;
+  height: 40px;
 }
-.icon--primary{
-    fill: var(--color-primary);
+.icon--primary {
+  fill: var(--color-primary);
 }
-.icon-container{
-    background: #f3f9fa;
-    width:64px;
-    height:64px;
-    border-radius: 100%;
-     display:inline-flex; /* chage to inline flex from inline block to align the logo in center of the span*/
-    justify-content: center;
-    align-items: center;
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex; /* chage to inline flex from inline block to align the logo in center of the span*/
+  justify-content: center;
+  align-items: center;
 }
+/* ---------------------------------------------------BUTTONS-------------------------------------------------- */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  margin:1rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+.btn--primary{
+    background:var(--color-primary);
+    color: #fff;
+}
+.btn--primary:hover{
+    background: #3a8ffd;
+}
+.btn--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+.btn--secondary:hover{
+  background: #00c8eb;
+}
+.btn--accent{
+    background: var(--color-accent);
+    color: #fff;
+}
+.btn--accent:hover{
+  background: #ec3000;
+}
+.btn--block{
+  width: 100%;
+  display: inline-block;
+}
+.btn--outline{
+    background:none ;
+    border: 2px solid #1b0760;
+    color:var(--color-headings);
+}
+.btn--outline:hover{
+  background:var(--color-headings);
+  color:#fff;
+}
+@media screen and (min-width: 1024px) {
+  .btn{
+    font-size: 1.5rem;
+  }
+}
+/*  */
