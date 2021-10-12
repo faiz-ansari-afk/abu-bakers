@@ -225,3 +225,22 @@ a {
     font-size: 1.5rem;
   }
 }
+/* ---------------------------CARDS----------------------------------- */
+.card{
+  border-radius: 7px;
+  width:40%;
+  padding: 1rem;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+.card__header , .card__body{
+  padding: 1rem 1rem;
+}
+.card--primary .card__header{
+  background: var(--color-primary);
+  color: #fff;
+}
+.card--secondary .card__header{
+  background: var(--color-secondary);
+  color: #fff;
+}
