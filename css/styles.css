@@ -294,3 +294,20 @@ a {
     font-size: 1.7rem;
   }
 }
+/* ---------------------------------------------------------------Media--------------------------------------------- */
+.media{
+  display: flex;
+}
+.media h3{
+  margin-top: 0.5rem;
+  line-height: 3.5rem;
+}
+.media__title{
+  margin-top: o;
+}
+.media__body{
+  margin: 0 2rem;
+}
+.media__image{
+  margin-top: 1rem;
+}
