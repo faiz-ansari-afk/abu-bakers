@@ -132,8 +132,15 @@ a {
   width: 40px;
   height: 40px;
 }
+.icon--small{
+  width: 30px;
+  height: 30px;
+}
 .icon--primary {
   fill: var(--color-primary);
+}
+.icon--white{
+  fill: #fff;
 }
 .icon-container {
   background: #f3f9fa;
@@ -143,6 +150,9 @@ a {
   display: inline-flex; /* chage to inline flex from inline block to align the logo in center of the span*/
   justify-content: center;
   align-items: center;
+}
+.icon-container--accent{
+  background: var(--color-accent);
 }
 /* ---------------------------------------------------BUTTONS-------------------------------------------------- */
 .btn {
@@ -229,7 +239,7 @@ a {
 /* ----------------------------------------------------------------------CARDS------------------------------------------------------------------ */
 .card{
   border-radius: 7px;
-  width:30%;
+  /* width:30%; */
   padding: 0;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
@@ -313,6 +323,10 @@ a {
   margin-top: 1rem;
 }
 /* ---------------------------------------------------------------QUOTES------------------------------------------ */
+.quote{
+  display: flex;
+  flex-direction: column;
+}
 .quote__text{
   font-size: 3rem;
   font-style: italic;
@@ -362,5 +376,34 @@ line-height: 1.3;
 @media screen and (min-width:1024px){
   .grid--1x3{
     grid-template-columns: repeat(3,1fr);
+  }
+}
+/* ------------------------------------------------------------TESTIMONIALS------------------------------------------------------ */
+/* change .card width property from 30% to full width */
+.testimonial{
+  padding: 3.2rem;
+}
+.testimonial__image{
+  position: relative;
+}
+.testimonial__image > img{ /*direct child selector*/
+  width: 100%;
+}
+.testimonial__image > .icon-container{
+  position: absolute;
+  top: 3rem;
+  right:-32px; /* -32px comes from .icon-container width:64px to arrange it in the middle of image*/
+}
+/* .testimonial .quote{
+  justify-content: center;
+  align-items: center;
+} */
+@media screen and (min-width:768px){
+  .testimonial .quote,
+  .testimonial .quote__author{
+    font-size: 2.4rem;
+  }
+  .testimonial .quote{
+    margin-left: 6rem;
   }
 }
