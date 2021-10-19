@@ -266,7 +266,16 @@ a {
   background: var(--color-secondary);
   color: #fff;
 }
+.card--primary .badge--primary{
+  background: #126de4;
+}
+.card--secondary .badge--secondary{
+  background: #02cdf1;
+}
 /* ----------------------------------------------------------------------------PLANS---------------------------------------------------------------------- */
+.plan{
+  transition: transform 0.2s ease-out;
+}
 .plan__name{
   color: #fff;
   margin: 0;
@@ -291,6 +300,9 @@ a {
 .plan .list--item{
   margin-bottom: 2rem;
 }
+.plan--popular{
+  transform: scale(1.1);
+}
 .plan--popular .card__header{
   position: relative;
 }
@@ -301,6 +313,13 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+.plan:hover{
+  transform: scale(1.05);
+}
+.plan--popular:hover{
+  transform: scale(1.15);
+
 }
 @media screen and (min-width: 1024px) {
   .plan__name{
@@ -624,4 +643,12 @@ display: none;
   .block-domain__prices{
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));/* auto-fit is used instead of using hardcoded value, it will make all element to fit on single line FIXME: Important tips (not a problem)*/
   }
+}
+/* PLANS Block */
+.block-plans .grid{
+  gap:8rem 4rem;
+}
+.block-plans .card{
+  max-width: 500px;
+  margin: 0 auto;
 }
