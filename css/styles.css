@@ -21,6 +21,9 @@ body {
   line-height: 1.5;
   color: var(--color-body);
 }
+p{
+  font-size: 1.6rem;
+}
 h1,
 h2,
 h3 {
@@ -651,4 +654,25 @@ display: none;
 .block-plans .card{
   max-width: 500px;
   margin: 0 auto;
+}
+/* FEATURES */
+.feature{
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+/* har section ke beech me 12rem thi heading ke baad wale sect me 12rem achi nhi lag ri thi to sirf pehli margin ko kam krne ke liye neeche wali code use kiye */
+.feature:first-of-type{
+  margin: 6rem;
+}
+.feature__heading{
+  margin: 1rem 0;
+}
+.feature__image{
+  width: 100%;
+}
+@media screen and (min-width:768px) {
+  /* content or image ka order swap krne ke liye ye technique istemaal kare */
+  .feature:nth-of-type(even) .feature__content{
+    order:2;
+  }
 }
