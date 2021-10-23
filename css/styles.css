@@ -714,3 +714,123 @@ display: none;
     font-size: 2rem;
   }
 }
+/* FOOTER */
+.footer{
+  background: #232323;
+}
+.footer__section{
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+.footer__heading{
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.footer__brand{
+  margin-top: 5rem;
+  text-align: center;
+}
+.footer__brand > h3{
+  width: 100%;
+  max-width: 270px;
+}
+.footer__copyright{
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+.footer a{
+  color: #777;
+}
+.footer a:hover{
+  color: #fff;
+  transition: color 0.3s;
+}
+.footer__section .list {
+  margin:0;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px){
+  .footer__sections{/*This class is created in footer section of web page*/
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+  }
+  .footer .collapsible__chevron{
+    display: none;
+  }
+  .footer .collapsible__content{
+    opacity: 1;
+    max-height: 100%;
+  }
+  .footer__brand{
+    order: -1;
+    margin-top: 1rem;
+  }
+  .footer__copyright{
+    font-size: 1.5rem;
+  }
+  .footer__section{
+    border: 0;
+  }
+  .footer__heading{
+    font-size: 1.6rem;
+  }
+}
+/* ----------------------------LOGO ABU BAKERS------------------------- */
+.logo-main{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.logo-container{
+  width: 100%;
+  height: 100%;
+  
+  font-size: 10px;
+}
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__text {
+  
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.logo__span {
+  position: relative;
+}
+
+.logo__span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5rem;
+  background: #000;
+  bottom: 0.9rem;
+  transition: all 0.2s ease-out;
+}
+
+.logo__text:hover {
+  background-position: 0 11px;
+}
+
+.logo__span:hover:before {
+  transform: translateY(10px)
+}
