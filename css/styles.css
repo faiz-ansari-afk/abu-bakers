@@ -667,6 +667,7 @@ display: none;
 }
 .feature__heading{
   margin: 1rem 0;
+  color: var(--color-headings);
 }
 .feature__image{
   width: 100%;
@@ -675,6 +676,9 @@ display: none;
   /* content or image ka order swap krne ke liye ye technique istemaal kare */
   .feature:nth-of-type(even) .feature__content{
     order:2;
+  }
+  .feature__content > p{
+    font-size: 1.8rem;
   }
 }
 /* ---------------------------------------------------------------------SHOWCASE-BLOCK------------------------------------------------------------------------------- */

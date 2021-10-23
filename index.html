@@ -15,11 +15,423 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- NavBar -->
+
+    <nav class="nav collapsible">
+      <a href="/"
+        ><h3>Abu-Bakers</h3>
+        <!-- Instead of name we can use Logo -->
+      </a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Khari</a></li>
+        <li class="nav__item"><a href="#">Butter</a></li>
+        <li class="nav__item"><a href="#">Toast</a></li>
+        <li class="nav__item"><a href="#">Farsaan</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Breakfast that made with ❤️</h1>
+          <p class="hero__tagline">Order your Breakfast now in few seconds</p>
+          <a href="" class="btn btn--accent btn--stretched">get started</a>
+        </header>
+        <!-- Image optimization (WEBP) technique is used... But it doesnt mean for me 🤷‍♂️ -->
+        <picture>
+          <source
+            type="image/png"
+            srcset="/images/khari.png 1x, /images/khari@2x.png"
+          />
+
+          <!-- <img src="/images/khari.png" alt="" class="hero__image" > -->
+        </picture>
+      </div>
+    </section>
+
+    <!-- Search Block -->
+
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>First Delivery is almost Free</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+          laborum alias fuga expedita deleniti pariatur error exercitationem
+          odio delectus rem!
+        </p>
+      </header>
+  
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Search your breakfast here..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--primary ">
+            <use xlink:href="images/sprite.svg#search"></use>
+            </svg>Search
+        </button>
+      </div>
+      <div >
+        <h4 class="block__paragraph" >Most popular Search :</h4>
+        <ul class="list block-domain__prices">
+          <li><a href="#">Maska Khari</a></li>
+          <li><a href="#">Tea Butter</a></li>
+          <li><a href="#">Till Toast</a></li>
+          <li><a href="#">Zeera Naand</a></li>
+          <li><a href="#">Amul Butter</a></li>
+          <li><a href="#">JK Khari</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Plan Block -->
+
+    <section class="block container block-plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF </span>
+              <span class="plan__description">Easy start on the Cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+                <li class="list__item">Item 4</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </div>
+        </div>
     
-    
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% OFF </span>
+              <span class="plan__description">Easy start on the Cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+                <li class="list__item">Item 4</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF </span>
+              <span class="plan__description">Easy start on the Cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+                <li class="list__item">Item 4</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Features -->
 
+    <section class="block container">
+      <header class="block__header">
+        <h2>Itna Asaan kaam Nhi hota..sab sikhana padega</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, assumenda.</p>
+      </header>
+            <article class="grid grid--1x2 feature">
+              <div class="feature__content">
+                <span class="icon-container">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#easy"></use>
+                  </svg>
+                </span>
+                <h3 class="feature__heading">Super Easy to Use</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
+                <a href="#" class="link-arrow">Learn More</a>
+              </div>
+              <picture>
+                <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
+                <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
+              </picture>
+            </article>
+      
+            <article class="grid grid--1x2 feature">
+              <div class="feature__content">
+                <span class="icon-container">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#easy"></use>
+                  </svg>
+                </span>
+                <h3 class="feature__heading">Super Easy to Use</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
+                <a href="#" class="link-arrow">Learn More</a>
+              </div>
+              <picture>
+                <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
+                <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
+              </picture>
+            </article>
+      
+            <article class="grid grid--1x2 feature">
+              <div class="feature__content">
+                <span class="icon-container">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#easy"></use>
+                  </svg>
+                </span>
+                <h3 class="feature__heading">Super Easy to Use</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
+                <a href="#" class="link-arrow">Learn More</a>
+              </div>
+              <picture>
+                <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
+                <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
+              </picture>
+            </article>
+          </section>
 
+          <!-- User Friendly -->
+
+          <section class="block block--dark block--skewed-right block-showcase">
+            <header class="block__header">
+              <h2>User-friendly Control Panel</h2>
+            </header>
+            <div class="container grid grid--1x2">
+              <picture class="block-showcase__image">
+                <!-- <source
+                  type="image/webp"
+                  srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+                />
+                <source
+                  type="image/png"
+                  srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+                /> -->
+                <img src="images/ipad.png" alt="" />
+              </picture>
+          
+              <ul class="list">
+          
+          
+                <li>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#snap"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title">Easy Start & Managed Orders</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        quisquam, ex nostrum vero voluptates dicta excepturi vel
+                        perspiciatis consequuntur ab.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+          
+          
+                <li>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#growth"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title">Cancellation & Refunds on the Go</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        quisquam, ex nostrum vero voluptates dicta excepturi vel
+                        perspiciatis consequuntur ab.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+          
+          
+                <li>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary">
+                        <use xlink:href="images/sprite.svg#wordpress"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title">Kya likhu samajh hi nhi ra</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        quisquam, ex nostrum vero voluptates dicta excepturi vel
+                        perspiciatis consequuntur ab.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Testimonial Block -->
+
+          <section class="block">
+            <header class="block__header">
+              <h2>What our Customers are Saying</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, labore. </p>
+            </header>
+            <div class="container">
+              <div class="card testimonial">
+                <div class="grid grid--1x2">
+                  <div class="testimonial__image">
+                    <img src="images/testimonial.jpg" alt="A happy, Smiling Face" />
+                    <span class="icon-container icon-container--accent">
+                      <svg class="icon icon--small icon--white">
+                        <use xlink:href="images/sprite.svg#quotes"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <blockquote class="quote">
+                    <p class="quote__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, eius repudiandae quasi ipsum magnam beatae?</p>
+                    <footer>
+                      <div class="media">
+                        <div class="media__image">
+                          <svg class="icon icon--primary quote__line">
+                            <use xlink:href="images/sprite.svg#line"></use>
+                          </svg>
+                        </div>
+                        <div class="media__body">
+                          <h3 class="media__title quote__author">Jhon Doe</h3>
+                          <p class="quote__organization">
+                            Pta nhi kon hai 
+                          </p>
+                        </div>
+                      </div>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Ready to get Started -->
+          <div class="callout callout--primary">
+            <div class="grid grid--1x2">
+              <div class="callout__content">
+                <h2>Ready to Get Started</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maxime expedita quam officiis praesentium asperiores eum dolor minima debitis nemo!</p>
+              </div>
+              <a href="" class="btn btn--secondary btn--stretched">Get Started</a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer class="block block--dark footer">
+            <div class="container grid footer__sections">
+        
+              <section class="collapsible collapsible--expanded footer__section">
+                <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Products</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </header>
+                <div class="collapsible__content">
+                  <ul class="list">
+                    <li> <a href="#">Khari</a>
+                    </li>
+                    <li> <a href="#">Butter</a></li>
+                    <li> <a href="#">Toast</a></li>
+                    <li> <a href="#">Naand Pav</a></li>
+                  </ul>
+                </div>
+              </section>
+        
+              <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">company</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </header>
+                <div class="collapsible__content">
+                  <ul class="list">
+                    <li> <a href="#">Wholesale</a>
+                    </li>
+                    <li> <a href="#">Retail</a></li>
+                    <li> <a href="#">Business</a></li>
+                  </ul>
+                </div>
+              </section>
+        
+              <section class="collapsible footer__section ">
+                <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Support</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </header>
+                <div class="collapsible__content">
+                  <ul class="list">
+                    <li> <a href="#">About Us</a>
+                    </li>
+                    <li> <a href="#">FAQ</a></li>
+                    <li> <a href="#">Guidelines</a></li>
+                  </ul>
+                </div>
+              </section>
+        
+              <section class="collapsible footer__section">
+                <header class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">Bakers</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </header>
+                <div class="collapsible__content">
+                  <ul class="list">
+                    <li> <a href="#">Pakeeza</a>
+                    </li>
+                    <li> <a href="#">Crown</a></li>
+                    <li> <a href="#">Yaseen</a></li>
+                    <li> <a href="#">Square Bake</a></li>
+                  </ul>
+                </div>
+              </section>
+              <section class="footer__brand">
+                <a href="#">
+                  <h3>Abu-Bakers</h3>
+                  <p class="footer__copyright">Copyright©️ 2021 Faiz Ansari</p>
+                </a>
+              </section>
+            </div>
+          </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
