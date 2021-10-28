@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Order your breakfast Now! in 5 minutes">
     <title>Abu-Bakers - The Breakfast Pride at Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,19 +14,21 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
     <!-- NavBar -->
 
     <nav class="nav collapsible">
       <a href="/"
-        ><h3>Abu-Bakers</h3>
+        ><h3 data-aos="zoom-in">Abu-Bakers</h3>
         <!-- Instead of name we can use Logo -->
       </a>
       <svg class="icon icon--white nav__toggler">
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
-      <ul class="list nav__list collapsible__content">
+      <ul class="list nav__list collapsible__content" data-aos="fade-left">
         <li class="nav__item"><a href="#">Khari</a></li>
         <li class="nav__item"><a href="#">Butter</a></li>
         <li class="nav__item"><a href="#">Toast</a></li>
@@ -37,27 +40,27 @@
 
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="zoom-in">
           <h1 class="block__heading">Breakfast that made with ❤️</h1>
           <p class="hero__tagline">Order your Breakfast now in few seconds</p>
           <a href="" class="btn btn--accent btn--stretched">get started</a>
         </header>
         <!-- Image optimization (WEBP) technique is used... But it doesnt mean for me 🤷‍♂️ -->
-        <picture>
+        <picture data-aos="slide-left">
           <source
             type="image/png"
             srcset="/images/khari.png 1x, /images/khari@2x.png"
           />
 
-          <!-- <img src="/images/khari.png" alt="" class="hero__image" > -->
+          <img src="/images/khari.png" alt="" class="hero__image" >
         </picture>
       </div>
     </section>
 
     <!-- Search Block -->
 
-    <section class="block container block-domain">
-      <header class="block__header">
+    <section class="block container block-domain" data-aos="fade">
+      <header class="block__header" data-aos="fade-down">
         <h2>First Delivery is almost Free</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
@@ -66,7 +69,7 @@
         </p>
       </header>
   
-      <div class="input-group">
+      <div class="input-group" data-aos="fade-up">
         <input
           type="text"
           class="input"
@@ -78,7 +81,7 @@
             </svg>Search
         </button>
       </div>
-      <div >
+      <div data-aos="fade" >
         <h4 class="block__paragraph" >Most popular Search :</h4>
         <ul class="list block-domain__prices">
           <li><a href="#">Maska Khari</a></li>
@@ -93,9 +96,9 @@
 
     <!-- Plan Block -->
 
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade">
       <div class="grid grid--1x3">
-        <div class="plan">
+        <div class="plan" data-aos="slide-right">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -116,7 +119,7 @@
           </div>
         </div>
     
-        <div class="plan plan--popular">
+        <div class="plan plan--popular" data-aos="slide-up">
           <div class="card card--primary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -136,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="plan">
+        <div class="plan" data-aos="slide-left">
           <div class="card card--secondary">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
@@ -161,13 +164,13 @@
 
     <!-- Features -->
 
-    <section class="block container">
-      <header class="block__header">
+    <section class="block container" data-aos="fade">
+      <header class="block__header" data-aos="zoom-in">
         <h2>Itna Asaan kaam Nhi hota..sab sikhana padega</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, assumenda.</p>
       </header>
             <article class="grid grid--1x2 feature">
-              <div class="feature__content">
+              <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#easy"></use>
@@ -177,14 +180,14 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
                 <a href="#" class="link-arrow">Learn More</a>
               </div>
-              <picture>
+              <picture data-aos="zoom-in-left">
                 <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
                 <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
               </picture>
             </article>
       
             <article class="grid grid--1x2 feature">
-              <div class="feature__content">
+              <div class="feature__content" data-aos="zoom-in-left">
                 <span class="icon-container">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#easy"></use>
@@ -194,14 +197,14 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
                 <a href="#" class="link-arrow">Learn More</a>
               </div>
-              <picture>
+              <picture data-aos="fade-right">
                 <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
                 <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
               </picture>
             </article>
       
             <article class="grid grid--1x2 feature">
-              <div class="feature__content">
+              <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#easy"></use>
@@ -211,7 +214,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tenetur amet mollitia architecto quae quidem illo culpa consequuntur eaque cupiditate.</p>
                 <a href="#" class="link-arrow">Learn More</a>
               </div>
-              <picture>
+              <picture data-aos="zoom-in-left">
                 <!-- <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">FIXME:Pta nhi kyu kaam nhi kr ra hai -->
                 <img src="images/easy.jpg" alt="Easy Logo" class="feature__image">  
               </picture>
@@ -220,12 +223,12 @@
 
           <!-- User Friendly -->
 
-          <section class="block block--dark block--skewed-right block-showcase">
-            <header class="block__header">
+          <section class="block block--dark block--skewed-right block-showcase" data-aos="fade">
+            <header class="block__header" data-aos="fade-up">
               <h2>User-friendly Control Panel</h2>
             </header>
             <div class="container grid grid--1x2">
-              <picture class="block-showcase__image">
+              <picture class="block-showcase__image" data-aos="slide-right">
                 <!-- <source
                   type="image/webp"
                   srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -237,7 +240,7 @@
                 <img src="images/ipad.png" alt="" />
               </picture>
           
-              <ul class="list">
+              <ul class="list" data-aos="slide-up">
           
           
                 <li>
@@ -301,23 +304,23 @@
 
           <!-- Testimonial Block -->
 
-          <section class="block">
-            <header class="block__header">
+          <section class="block" data-aos="fade">
+            <header class="block__header" data-aos="fade-down">
               <h2>What our Customers are Saying</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, labore. </p>
             </header>
-            <div class="container">
+            <div class="container" data-aos="slide-up">
               <div class="card testimonial">
                 <div class="grid grid--1x2">
                   <div class="testimonial__image">
                     <img src="images/testimonial.jpg" alt="A happy, Smiling Face" />
-                    <span class="icon-container icon-container--accent">
+                    <span class="icon-container icon-container--accent" data-aos="zoom-in-left">
                       <svg class="icon icon--small icon--white">
                         <use xlink:href="images/sprite.svg#quotes"></use>
                       </svg>
                     </span>
                   </div>
-                  <blockquote class="quote">
+                  <blockquote class="quote" data-aos="fade-up">
                     <p class="quote__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, eius repudiandae quasi ipsum magnam beatae?</p>
                     <footer>
                       <div class="media">
@@ -341,7 +344,7 @@
           </section>
 
           <!-- Ready to get Started -->
-          <div class="callout callout--primary">
+          <div class="callout callout--primary" data-aos="zoom-in">
             <div class="grid grid--1x2">
               <div class="callout__content">
                 <h2>Ready to Get Started</h2>
@@ -363,7 +366,7 @@
                   </svg>
                 </header>
                 <div class="collapsible__content">
-                  <ul class="list">
+                  <ul class="list" data-aos="slide-down">
                     <li> <a href="#">Khari</a>
                     </li>
                     <li> <a href="#">Butter</a></li>
@@ -381,7 +384,7 @@
                   </svg>
                 </header>
                 <div class="collapsible__content">
-                  <ul class="list">
+                  <ul class="list" data-aos="slide-down">
                     <li> <a href="#">Wholesale</a>
                     </li>
                     <li> <a href="#">Retail</a></li>
@@ -398,7 +401,7 @@
                   </svg>
                 </header>
                 <div class="collapsible__content">
-                  <ul class="list">
+                  <ul class="list" data-aos="slide-down">
                     <li> <a href="#">About Us</a>
                     </li>
                     <li> <a href="#">FAQ</a></li>
@@ -415,7 +418,7 @@
                   </svg>
                 </header>
                 <div class="collapsible__content">
-                  <ul class="list">
+                  <ul class="list" data-aos="slide-down">
                     <li> <a href="#">Pakeeza</a>
                     </li>
                     <li> <a href="#">Crown</a></li>
@@ -426,12 +429,17 @@
               </section>
               <section class="footer__brand">
                 <a href="#">
-                  <h3>Abu-Bakers</h3>
+                  <h3 data-aos="zoom-in">Abu-Bakers</h3>
                   <p class="footer__copyright">Copyright©️ 2021 Faiz Ansari</p>
                 </a>
               </section>
             </div>
           </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
   </body>
 </html>
