@@ -1,1 +1,7 @@
 extra assets/
+node_modules/
+package-lock.json
+.vscode/
+playground.html
+dist/
+.cache/

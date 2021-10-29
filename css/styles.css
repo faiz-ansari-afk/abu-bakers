@@ -6,7 +6,7 @@
   --color-body: #918ca4;
   --color-border:#ccc;
   --color-body-darker:#5c5577
-  --border-radius:50px;
+  /* --border-radius:50px; */
 }
 *, *::after, *::before{
   box-sizing: border-box; /* it is set to border box because button created by anchor tag is going outside of the box */
@@ -17,7 +17,7 @@ html {
 }
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rems;
+  font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -348,7 +348,7 @@ a {
   line-height: 3.5rem;
 }
 .media__title{
-  margin-top: o;
+  margin-top: 0;
 }
 .media__body{
   margin: 0 2rem;
